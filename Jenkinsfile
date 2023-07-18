@@ -14,7 +14,7 @@ pipeline {
         stage ('build') {
             steps {
                 script {
-                    sh "docker build --no-cache -t umasai-demo-app ."
+                    sh "docker build -t umasai-demo-app ."
                 }
             }
         }
